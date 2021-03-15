@@ -1,10 +1,8 @@
-import React, { useEffect } from "react";
+import React from "react";
 import classes from "./Cockpit.css";
 
-const Cockpit = (props) => {
-  useEffect(() => {
-    console.log("useEffect rendered");
-  });
+const cockpit = (props) => {
+  useEffect(() => {});
 
   const style = {
     backgroundColor: "yellow",
@@ -25,4 +23,4 @@ const Cockpit = (props) => {
   );
 };
 
-export default Cockpit;
+export default cockpit;

@@ -4,12 +4,12 @@ import React, { Component } from "react";
 
 class Persons extends Component {
   render() {
-    return this.props.persons.map((p, index) => {
+    this.props.persons.map((p, index) => {
       return (
         <AppError key={p.id}>
           <Person
-            change={(event) => this.props.changed(event, p.id)}
-            click={() => this.props.deleted(index)}
+            change={(event) => props.changed(event, p.id)}
+            click={() => props.deleted(index)}
             name={p.name}
             age={p.age}
           ></Person>
@@ -18,4 +18,4 @@ class Persons extends Component {
     });
   }
 }
-export default Persons;
+export default persons;

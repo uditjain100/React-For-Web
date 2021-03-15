@@ -16,4 +16,4 @@ class Person extends Component {
   }
 }
 
-export default Person;
+export default person;

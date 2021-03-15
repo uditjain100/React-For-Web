@@ -4,7 +4,7 @@ import React, { Component } from "react";
 
 class Persons extends Component {
   render() {
-    return this.props.persons.map((p, index) => {
+    this.props.persons.map((p, index) => {
       return (
         <AppError key={p.id}>
           <Person

@@ -39,15 +39,16 @@ import Cockpit from "../components/Cockpit/Cockpit";
 class App extends Component {
   constructor(props) {
     super(props);
-    this.state = {
-      persons: [
-        { name: "A", id: "asdflkj" },
-        { name: "B", id: "qwerpoiu" },
-        { name: "C", id: "zxcvmn" },
-      ],
-      showPersons: false,
-    };
   }
+
+  state = {
+    persons: [
+      { name: "A", id: "asdflkj" },
+      { name: "B", id: "qwerpoiu" },
+      { name: "C", id: "zxcvmn" },
+    ],
+    showPersons: false,
+  };
 
   switchNameHandler = (newName) => {
     this.setState({
